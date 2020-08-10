@@ -1,19 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Alec Gao">
     <meta name="main page" content="main page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Project Topic Proposal</title>
-    <link href="css/indexstyle.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
+    <nav class="navbar navbar-light bg-light d-flex">
+        <div class="searchBox form-inline d-flex flex-nowrap">
+            <a href="index.html"><i class="navbar-brand fa fa-graduation-cap"></i></a>
+            <input type="search" class="form-control mr-2" placeholder="Course/Professor" aria-label="Search">
+            <button type="button" class="btn btn-primary"><i class="fas fa-search fa-rotate-90"
+                    aria-label="search"></i></button>
+        </div>
+        <div class="d-flex flex-row-reverse form-inline">
+            <div class="icon">
+                <button type="button" class="btn btn-primary"><i class="fas fa-user"></i></button>
+            </div>
 
-    <section>
-        
-    </section>
+            <div class="login mr-2">
+                <button type="button" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i></button>
+            </div>
 
+            <div class="sign-up mr-2">
+                <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="px-5">
+        <div class="class-info container">
+            <h1 class="class-info-title font-weight-bold">Info 200</h1>
+
+            <div class="professor-name mb-3">
+                Professor's name
+            </div>
+
+            <div class="border border-primary rounded p-3 mb-3">
+                <p>Professor's descriptions</p>
+                <div class="button-group d-flex flex-row-reverse">
+                    <button type="button" class="class-rate-btn btn btn-light p-0"><i
+                            class="fas fa-thumbs-up text-dark"></i></button>
+                    <button type="button" class="class-rate-btn btn btn-light p-0"><i
+                            class="fas fa-thumbs-down text-dark"></i></button>
+                </div>
+            </div>
+
+            <div class="class-info-data row">
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">Mean GPA</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">Average Time</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">Reading Load</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">Practice Problem Load</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comments container">
+            <h1 class="comments-title">
+                Comment:
+            </h1>
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="accuracy-score">
+                        <p>Accuracy Score: 5.0</p>
+                    </div>
+
+                    <div class="recommendation">
+                        <p>Professor Recommended:</p>
+                    </div>
+
+                    <div class="student-comment">
+                        <p>This is the best professor I ever met</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    </main>
 </body>
 
 </html>
