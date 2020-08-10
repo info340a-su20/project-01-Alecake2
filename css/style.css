@@ -45,12 +45,21 @@ footer {
     width: 30px;
 }
 
-.comments {
+.ratings {
     margin-bottom: 4rem;
 }
 
-.comments-title {
+.ratings-title {
     font-size: 2rem;
+}
+
+.student-comment {
+    display: none;
+}
+
+.accuracy-score:hover + .student-comment{
+    display: block;
+    
 }
 
 .class-data-info .card {
@@ -73,4 +82,9 @@ footer {
     max-width: 330px;
     padding: 40px;
     background-color: white;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
 }
