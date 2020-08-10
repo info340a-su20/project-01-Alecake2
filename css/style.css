@@ -45,12 +45,22 @@ footer {
     width: 30px;
 }
 
+.professor-desc {
+    margin-bottom: 40px;
+}
+
 .ratings {
     margin-bottom: 4rem;
 }
 
 .ratings-title {
     font-size: 2rem;
+}
+
+.rate-btn-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .student-comment {
@@ -60,10 +70,6 @@ footer {
 .accuracy-score:hover + .student-comment{
     display: block;
     
-}
-
-.class-data-info .card {
-    height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
