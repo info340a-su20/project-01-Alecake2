@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.5;
+    min-width: 500px;
 }
 
 h1 {
@@ -14,7 +15,6 @@ h2 {
 
 .navbar {
     height: 64px;
-    min-width: 500px;
 }
 
 .navbar .navbar-brand:hover {
