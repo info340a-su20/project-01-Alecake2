@@ -36,6 +36,10 @@ h2 {
     width: 30px;
 }
 
+.comments {
+    margin-bottom: 4rem;
+}
+
 .comments-title {
     font-size: 2rem;
 }
