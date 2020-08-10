@@ -5,12 +5,20 @@ body {
     min-width: 500px;
 }
 
+header, main {
+    padding: 0 5rem;
+}
+
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer {
+    font-size: 1rem;
 }
 
 .navbar {
@@ -55,7 +63,7 @@ h2 {
     }
 }
 
-.login {
+.login-container {
     height: calc(100vh - 64px);
     background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjU1IiBoZWlnaHQ9IjU1IiB2aWV3Qm94PSIwIDAgNDAsNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IGlkPSJwYXR0ZXJuLWJhY2tncm91bmQiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbGw9IiNlOWVjZWYiPjwvcmVjdD4gPGNpcmNsZSBmaWxsPSIjODY4ZTk2IiBjeD0iMjAiIGN5PSIyMCIgcj0iOCI+PC9jaXJjbGU+PGNpcmNsZSBmaWxsPSIjZmZmZmZmIiBjeD0iMjAiIGN5PSIyMCIgcj0iNyI+PC9jaXJjbGU+PGNpcmNsZSBmaWxsPSIjZmZmZmZmIiBjeD0iLTIwIiBjeT0iMjAiIHI9IjciPjwvY2lyY2xlPjwvcGF0dGVybj4gIDwvZGVmcz4gPHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgaGVpZ2h0PSIxMDAlIiB3aWR0aD0iMTAwJSI+PC9yZWN0Pjwvc3ZnPg==");
 }
