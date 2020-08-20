@@ -27,3 +27,11 @@ const data = {
     practiceProblem: null,
   },
 };
+
+export function getCourseList() {
+  return Object.keys(data);
+}
+
+export function getCourse(name) {
+  return data[name];
+}
