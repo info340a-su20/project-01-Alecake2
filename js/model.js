@@ -10,7 +10,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-      "Joe Schmo": {
+      "John Brown": {
         name: "Joe Schmo",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
@@ -19,7 +19,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-      "Jane Smith": {
+      "John Brown": {
         name: "Jane Smith",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
@@ -225,7 +225,7 @@ const data = {
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
         img: "img/instructortwo.jpg",
-        accuracy: 3,
+        accuracy: 3;
         thumbUp: false,
         thumbDown: false,
       },
@@ -376,10 +376,387 @@ const data = {
     readingLoad: 70,
     practiceProblemLoad: "heavy",
   },
-};
 
-let curCourse = Object.keys(data)[0];
+  phys121: {
+    professors: [
+      {
+        name: "Saanvi Browning",
+        desc:
+          "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
+        img: "img/instructorone.jpg",
+        accuracy: 4,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Ishika Vargas",
+        desc:
+          "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
+        img: "img/instructortwo.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Reanna Morin",
+        desc:
+          "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
+        img: "img/instructorthree.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+    ],
+    comments: [
+      {
+        author: "anonymous A",
+        body: "This class is great and professors are so friendly!",
+      },
+    ],
+    gpa: 3.76,
+    timeConsumed: 17,
+    readingLoad: 70,
+    practiceProblemLoad: "heavy",
+  },
 
+  amath152: {
+    professors: [
+      {
+        name: "Saanvi Browning",
+        desc:
+          "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
+        img: "img/instructorone.jpg",
+        accuracy: 4,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Ishika Vargas",
+        desc:
+          "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
+        img: "img/instructortwo.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Reanna Morin",
+        desc:
+          "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
+        img: "img/instructorthree.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+    ],
+    comments: [
+      {
+        author: "anonymous A",
+        body: "This class is great and professors are so friendly!",
+      },
+    ],
+    gpa: 3.76,
+    timeConsumed: 17,
+    readingLoad: 70,
+    practiceProblemLoad: "heavy",
+  },
+
+  arch150: {
+    professors: [
+      {
+        name: "Saanvi Browning",
+        desc:
+          "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
+        img: "img/instructorone.jpg",
+        accuracy: 4,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Ishika Vargas",
+        desc:
+          "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
+        img: "img/instructortwo.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Reanna Morin",
+        desc:
+          "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
+        img: "img/instructorthree.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+    ],
+    comments: [
+      {
+        author: "anonymous A",
+        body: "This class is great and professors are so friendly!",
+      },
+    ],
+    gpa: 3.76,
+    timeConsumed: 17,
+    readingLoad: 70,
+    practiceProblemLoad: "heavy",
+  },
+
+  com200: {
+    professors: [
+      {
+        name: "Saanvi Browning",
+        desc:
+          "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
+        img: "img/instructorone.jpg",
+        accuracy: 4,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Ishika Vargas",
+        desc:
+          "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
+        img: "img/instructortwo.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Reanna Morin",
+        desc:
+          "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
+        img: "img/instructorthree.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+    ],
+    comments: [
+      {
+        author: "anonymous A",
+        body: "This class is great and professors are so friendly!",
+      },
+    ],
+    gpa: 3.76,
+    timeConsumed: 17,
+    readingLoad: 70,
+    practiceProblemLoad: "heavy",
+  },
+
+  info201: {
+    professors: [
+      {
+        name: "Saanvi Browning",
+        desc:
+          "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
+        img: "img/instructorone.jpg",
+        accuracy: 4,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Ishika Vargas",
+        desc:
+          "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
+        img: "img/instructortwo.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Reanna Morin",
+        desc:
+          "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
+        img: "img/instructorthree.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+    ],
+    comments: [
+      {
+        author: "anonymous A",
+        body: "This class is great and professors are so friendly!",
+      },
+    ],
+    gpa: 3.76,
+    timeConsumed: 17,
+    readingLoad: 70,
+    practiceProblemLoad: "heavy",
+  },
+
+  math126: {
+    professors: [
+      {
+        name: "Saanvi Browning",
+        desc:
+          "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
+        img: "img/instructorone.jpg",
+        accuracy: 4,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Ishika Vargas",
+        desc:
+          "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
+        img: "img/instructortwo.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Reanna Morin",
+        desc:
+          "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
+        img: "img/instructorthree.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+    ],
+    comments: [
+      {
+        author: "anonymous A",
+        body: "This class is great and professors are so friendly!",
+      },
+    ],
+    gpa: 3.76,
+    timeConsumed: 17,
+    readingLoad: 70,
+    practiceProblemLoad: "heavy",
+  },
+
+  math125: {
+    professors: [
+      {
+        name: "Saanvi Browning",
+        desc:
+          "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
+        img: "img/instructorone.jpg",
+        accuracy: 4,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Ishika Vargas",
+        desc:
+          "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
+        img: "img/instructortwo.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Reanna Morin",
+        desc:
+          "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
+        img: "img/instructorthree.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+    ],
+    comments: [
+      {
+        author: "anonymous A",
+        body: "This class is great and professors are so friendly!",
+      },
+    ],
+    gpa: 3.76,
+    timeConsumed: 17,
+    readingLoad: 70,
+    practiceProblemLoad: "heavy",
+  },
+
+  stat220: {
+    professors: [
+      {
+        name: "Saanvi Browning",
+        desc:
+          "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
+        img: "img/instructorone.jpg",
+        accuracy: 4,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Ishika Vargas",
+        desc:
+          "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
+        img: "img/instructortwo.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Reanna Morin",
+        desc:
+          "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
+        img: "img/instructorthree.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+    ],
+    comments: [
+      {
+        author: "anonymous A",
+        body: "This class is great and professors are so friendly!",
+      },
+    ],
+    gpa: 3.76,
+    timeConsumed: 17,
+    readingLoad: 70,
+    practiceProblemLoad: "heavy",
+  },
+
+  stat311: {
+    professors: [
+      {
+        name: "Saanvi Browning",
+        desc:
+          "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
+        img: "img/instructorone.jpg",
+        accuracy: 4,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Ishika Vargas",
+        desc:
+          "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
+        img: "img/instructortwo.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+      {
+        name: "Reanna Morin",
+        desc:
+          "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
+        img: "img/instructorthree.jpg",
+        accuracy: 4.3,
+        thumbUp: false,
+        thumbDown: false,
+      },
+    ],
+    comments: [
+      {
+        author: "anonymous A",
+        body: "This class is great and professors are so friendly!",
+      },
+    ],
+    gpa: 3.76,
+    timeConsumed: 17,
+    readingLoad: 70,
+    practiceProblemLoad: "heavy",
+  },
+
+
+}
 export function getCourseList() {
   return Object.keys(data);
 }
