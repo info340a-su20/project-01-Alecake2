@@ -21,10 +21,6 @@ footer {
     font-size: 1rem;
 }
 
-.navbar {
-    height: 64px;
-}
-
 .navbar .navbar-brand:hover {
     transition: 0.2s;
     color: #007bff;
