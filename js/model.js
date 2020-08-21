@@ -6,28 +6,39 @@ const data = {
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
         img: "img/instructorone.jpg",
-        rate: 0,
+        accuracy: 0,
+        thumbUp: false,
+        thumbDown: false,
       },
       {
         name: "Joe Schmo",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
         img: "img/instructortwo.jpg",
-        rate: 0,
+        accuracy: 0,
+        thumbUp: false,
+        thumbDown: false,
       },
       {
         name: "Jane Smith",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
         img: "img/instructorthree.jpg",
-        rate: 0,
+        accuracy: 0,
+        thumbUp: false,
+        thumbDown: false,
       },
     ],
-    comments: [],
+    comments: [
+      {
+        author: "anonymous A",
+        body: "This class is great and professors are so friendly!",
+      },
+    ],
     gpa: 3.6,
     timeConsumed: 10,
     readingLoad: 3000,
-    practiceProblem: null,
+    practiceProblemLoad: "heavy",
   },
 };
 
