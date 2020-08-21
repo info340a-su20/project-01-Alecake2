@@ -11,14 +11,14 @@ function renderRateButtons() {
   btnDown.appendChild(iconDown);
 
   const btnUp = document.createElement("button");
-  btnUp.className = "class-rate-btn btn btn-light p-0";
+  btnUp.className = "class-rate-btn btn btn-light p-0 mr-2";
   btnUp.setAttribute("type", "button");
   const iconUp = document.createElement("i");
   iconUp.className = "fas fa-thumbs-down text-dark";
   btnUp.appendChild(iconUp);
 
   const hints = document.createElement("p");
-  hints.className = "button hints mb-0";
+  hints.className = "button hints mb-0 mr-2";
   hints.textContent = "Do you find this description accurate?";
 
   container.appendChild(btnDown);
@@ -50,14 +50,22 @@ function renderProfessor(professor) {
   name.classList.add("professor-name", "mb-0", "h3");
   name.textContent = professor.name;
   const desc = document.createElement("p");
-  desc.className = "professor-desc";
+  desc.className = "professor-desc mb-0";
   desc.textContent = professor.desc;
 
   infoContainer.appendChild(name);
   infoContainer.appendChild(desc);
 
+  const footer = document.createElement("div");
+  footer.className = "professor-footer d-flex justify-content-between";
+  const rating = document.createElement("p");
+  rating.className = "professor-rating text-primary mb-0";
+  footer.appendChild(rating);
+  footer.appendChild(renderRateButtons());
+
   item.appendChild(photo);
   item.appendChild(infoContainer);
+  item.appendChild(footer);
 
   return item;
 }

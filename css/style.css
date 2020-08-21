@@ -57,10 +57,20 @@ footer {
     font-size: 2rem;
 }
 
-.rate-btn-container {
+.professor-footer {
+    display: flex;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    width: 100%;
+}
+
+.rate-btn-container p {
+    color: gray;
+    font-size: 1rem;
+}
+
+.professor-rating {
+    font-size: 2rem;
 }
 
 .student-comment {
@@ -92,5 +102,5 @@ footer {
 
 img {
     max-width: 200px;
-    max-height: 200px;
+    max-height: 220px;
 }
