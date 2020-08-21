@@ -98,3 +98,31 @@ export function renderPracticeLoad(load) {
   const container = document.getElementById("practice-load");
   container.textContent = load;
 }
+
+export function renderComment(comment) {
+  const container = document.createElement("div");
+  container.className = "comment px-3";
+
+  const authorName = document.createElement("p");
+  authorName.className = "author font-weight-bold";
+  authorName.textContent = author;
+  const commentBody = document.createElement("p");
+  commentBody.className = "comment-body";
+  commentBody.textContent = comment.content;
+
+  container.appendChild(authorName);
+  container.appendChild(commentBody);
+
+  return container;
+}
+
+export function renderComments(comments) {
+  const container = document.getElementById("comments-inner-container");
+  container.innerHTML = "";
+  comments.forEach((comment, i) => {
+    container.appendChild(renderComment(comment));
+    if (i < comments.length - 1) {
+      container.appendChild(document.createElement("hr"));
+    }
+  });
+}
