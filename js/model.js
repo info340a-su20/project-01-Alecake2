@@ -49,3 +49,11 @@ export function getCourseList() {
 export function getCourse(name) {
   return data[name];
 }
+
+export function addComment(course, author, comment) {
+  data[course].comments.push({ author, body: comment });
+}
+
+export function getComments(course) {
+  return data[course].comments;
+}
