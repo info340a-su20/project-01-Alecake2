@@ -10,11 +10,11 @@ document.getElementById("send-comments-btn").addEventListener("click", () => {
   if (!!comment && comment.length > 0) {
     textarea.value = "";
     sendComment(comment);
-    textarea.setCustomValidity('');
+    textarea.setCustomValidity("");
   } else {
-    textarea.setCustomValidity('Comment can not be empty!');
-    let feedback = document.querySelector('#commentFeedback');
-    feedback.textContent = 'Comment can not be empty!';
+    textarea.setCustomValidity("Comment can not be empty!");
+    let feedback = document.querySelector("#commentFeedback");
+    feedback.textContent = "Comment can not be empty!";
   }
 });
 
@@ -27,23 +27,14 @@ document.getElementById("search-course-btn").addEventListener("click", () => {
     console.log(courseName, courseList);
 
     if (courseList.includes(courseName)) {
+      courseName.setCustomValidity("");
       changeCourse(courseName);
       renderCourse();
     } else {
       console.error(`${courseName} not in course lists`);
+      courseName.setCustomValidity("this course does not exist");
+      let feedback = document.querySelector("#searchFeedback");
+      feedback.textContent = "this course does not exist";
     }
   }
 });
-
-const dept = document.getElementById("input-dept").value;
-const num = document.getElementById("input-num").value;
-const courseName = `${dept}${num}`;
-courseName.addEventListener('input', function(){
-  if (!courseList.includes(courseName)) {
-    courseName.setCustomValidity('this course does not exist');
-    let feedback = document.querySelector('#searchFeedback');
-    feedback.textContent = 'this course does not exist';
-  } else {
-    courseName.setCustomValidity('');
-  }  
-})
