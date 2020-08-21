@@ -10,7 +10,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-      "John Brown": {
+      "Joe Schmo": {
         name: "Joe Schmo",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
@@ -19,7 +19,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-      "John Brown": {
+      "Jane Smith": {
         name: "Jane Smith",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",

@@ -12,12 +12,12 @@ export function sendComment(comment) {
   renderComments(getComments());
 }
 
-export function thumbUp(course, professor) {
-  setThumpUp(course, professor);
+export function thumbUp(professor) {
+  setThumbUp(professor);
   renderProfessors(getProfessors());
 }
 
-export function thumbDown(course, professor) {
-  setThumbDown(course, professor);
+export function thumbDown(professor) {
+  setThumbDown(professor);
   renderProfessors(getProfessors());
 }

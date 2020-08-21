@@ -5,26 +5,37 @@ function renderTitle(title) {
   document.getElementById("class-title").textContent = title;
 }
 
-function renderRateButtons() {
+function renderRateButtons(professor) {
   const container = document.createElement("div");
   container.className =
     "rate-btn-container button-group d-flex flex-row-reverse";
 
   const btnDown = document.createElement("button");
-  btnDown.className = "class-rate-btn btn btn-light p-0";
+  btnDown.className = "class-rate-btn btn p-0";
+  btnDown.classList.add(
+    professor.thumbDown ? "btn-primary" : "btn-light",
+    professor.thumbDown ? "text-white" : "text-dark"
+  );
   btnDown.setAttribute("type", "button");
   btnDown.addEventListener("click", () => {
-    thumbDown();
+    thumbDown(professor.name);
   });
   const iconDown = document.createElement("i");
-  iconDown.className = "fas fa-thumbs-down text-dark";
+  iconDown.className = "fas fa-thumbs-down";
   btnDown.appendChild(iconDown);
 
   const btnUp = document.createElement("button");
-  btnUp.className = "class-rate-btn btn btn-light p-0 mr-2";
+  btnUp.className = "class-rate-btn btn p-0 mr-2";
+  btnUp.classList.add(
+    professor.thumbUp ? "btn-primary" : "btn-light",
+    professor.thumbUp ? "text-white" : "text-dark"
+  );
   btnUp.setAttribute("type", "button");
+  btnUp.addEventListener("click", () => {
+    thumbUp(professor.name);
+  });
   const iconUp = document.createElement("i");
-  iconUp.className = "fas fa-thumbs-down text-dark";
+  iconUp.className = "fas fa-thumbs-up";
   btnUp.appendChild(iconUp);
 
   const hints = document.createElement("p");
