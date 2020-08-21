@@ -36,8 +36,8 @@ const data = {
       },
     ],
     gpa: 3.6,
-    timeConsumed: 10,
-    readingLoad: 3000,
+    timeConsumed: "10 Hours",
+    readingLoad: "3000 words",
     practiceProblemLoad: "heavy",
   },
 };
