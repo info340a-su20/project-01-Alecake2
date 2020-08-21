@@ -1,7 +1,7 @@
 const data = {
   info200: {
-    professors: [
-      {
+    professors: {
+      "John Brown": {
         name: "John Brown",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
@@ -10,7 +10,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-      {
+      "John Brown": {
         name: "Joe Schmo",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
@@ -19,7 +19,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-      {
+      "John Brown": {
         name: "Jane Smith",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
@@ -28,7 +28,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-    ],
+    },
     comments: [
       {
         author: "anonymous A",
@@ -36,8 +36,8 @@ const data = {
       },
     ],
     gpa: 3.6,
-    timeConsumed: 10,
-    readingLoad: 3000,
+    timeConsumed: "10 Hours",
+    readingLoad: "3000 words",
     practiceProblemLoad: "heavy",
   },
 
@@ -384,6 +384,40 @@ export function getCourseList() {
   return Object.keys(data);
 }
 
-export function getCourse(name) {
-  return data[name];
+export function getCourse() {
+  const courseData = data[curCourse];
+  courseData.title = curCourse;
+  return courseData;
+}
+
+export function addComment(author, comment) {
+  data[curCourse].comments.push({ author, body: comment });
+}
+
+export function getComments() {
+  return data[curCourse].comments;
+}
+
+export function setThumbUp(professor) {
+  data[curCourse].professors[professor].thumbUp = true;
+  data[curCourse].professors[professor].thumbDown = false;
+}
+
+export function setThumbDown(professor) {
+  data[curCourse].professors[professor].thumbUp = false;
+  data[curCourse].professors[professor].thumbDown = true;
+}
+
+export function getProfessors() {
+  return data[curCourse].professors;
+}
+
+export function getCurCourse() {
+  return curCourse;
+}
+
+export function changeCourse(newCourse) {
+  if (newCourse in data) {
+    curCourse = newCourse;
+  }
 }

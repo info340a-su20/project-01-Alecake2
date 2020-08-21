@@ -1,3 +1,10 @@
+import { thumbUp, thumbDown } from "./controller.js";
+import { getCurCourse, getCourse } from "./model.js";
+
+function renderTitle(title) {
+  document.getElementById("class-title").textContent = title;
+}
+
 function renderRateButtons() {
   const container = document.createElement("div");
   container.className =
@@ -6,6 +13,9 @@ function renderRateButtons() {
   const btnDown = document.createElement("button");
   btnDown.className = "class-rate-btn btn btn-light p-0";
   btnDown.setAttribute("type", "button");
+  btnDown.addEventListener("click", () => {
+    thumbDown();
+  });
   const iconDown = document.createElement("i");
   iconDown.className = "fas fa-thumbs-down text-dark";
   btnDown.appendChild(iconDown);
@@ -45,7 +55,7 @@ function renderProfessor(professor) {
   photo.alt = `${professor.name}'s picture`;
 
   const infoContainer = document.createElement("div");
-  infoContainer.classList.add("w-100", "m-3", "pho");
+  infoContainer.classList.add("w-100", "m-3", "position-relative");
   const name = document.createElement("p");
   name.classList.add("professor-name", "mb-0", "h3");
   name.textContent = professor.name;
@@ -53,20 +63,21 @@ function renderProfessor(professor) {
   desc.className = "professor-desc mb-0";
   desc.textContent = professor.desc;
 
-  infoContainer.appendChild(name);
-  infoContainer.appendChild(desc);
-
   const footer = document.createElement("div");
-  footer.className = "professor-footer d-flex justify-content-between";
+  footer.className =
+    "professor-footer d-flex justify-content-between align-items-end";
   const rating = document.createElement("p");
   rating.className = "professor-rating text-primary mb-0";
-  rating.textContent = professor.rating;
+  rating.textContent = parseFloat(professor.accuracy).toFixed(1) + "/5.0";
   footer.appendChild(rating);
-  footer.appendChild(renderRateButtons());
+  footer.appendChild(renderRateButtons(professor));
+
+  infoContainer.appendChild(name);
+  infoContainer.appendChild(desc);
+  infoContainer.appendChild(footer);
 
   item.appendChild(photo);
   item.appendChild(infoContainer);
-  item.appendChild(footer);
 
   return item;
 }
@@ -74,29 +85,29 @@ function renderProfessor(professor) {
 export function renderProfessors(professors) {
   const container = document.getElementById("professors");
   container.innerHTML = "";
-  professors.forEach((prof) => {
+  Object.values(professors).forEach((prof) => {
     container.appendChild(renderProfessor(prof));
   });
 }
 
 export function renderGPA(gpa) {
   const container = document.getElementById("gpa");
-  container.textContent = gpa;
+  container.textContent = `Mean GPA: ${gpa}`;
 }
 
 export function renderTimeLoad(load) {
   const container = document.getElementById("time-load");
-  container.textContent = load;
+  container.textContent = `Average Time / wk: ${load}`;
 }
 
 export function renderReadingLoad(load) {
   const container = document.getElementById("reading-load");
-  container.textContent = load;
+  container.textContent = `Weekly Reading Load: ${load}`;
 }
 
 export function renderPracticeLoad(load) {
   const container = document.getElementById("practice-load");
-  container.textContent = load;
+  container.textContent = `Practice Problem Load: ${load}`;
 }
 
 export function renderComment(comment) {
@@ -105,10 +116,10 @@ export function renderComment(comment) {
 
   const authorName = document.createElement("p");
   authorName.className = "author font-weight-bold";
-  authorName.textContent = author;
+  authorName.textContent = comment.author;
   const commentBody = document.createElement("p");
   commentBody.className = "comment-body";
-  commentBody.textContent = comment.content;
+  commentBody.textContent = comment.body;
 
   container.appendChild(authorName);
   container.appendChild(commentBody);
@@ -125,4 +136,15 @@ export function renderComments(comments) {
       container.appendChild(document.createElement("hr"));
     }
   });
+}
+
+export function renderCourse() {
+  const courseData = getCourse();
+  renderTitle(courseData.title);
+  renderProfessors(courseData.professors);
+  renderGPA(courseData.gpa);
+  renderTimeLoad(courseData.timeConsumed);
+  renderReadingLoad(courseData.readingLoad);
+  renderPracticeLoad(courseData.practiceProblemLoad);
+  renderComments(courseData.comments);
 }
