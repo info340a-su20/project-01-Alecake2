@@ -132,12 +132,12 @@ export function renderComments(comments) {
   });
 }
 
-export function renderCourse(title, course) {
+export function renderCourse(title, courseData) {
   renderTitle(title);
-  renderProfessors(course.professors);
-  renderGPA(course.gpa);
-  renderTimeLoad(course.timeConsumed);
-  renderReadingLoad(course.readingLoad);
-  renderPracticeLoad(course.practiceProblemLoad);
-  renderComments(course.comments);
+  renderProfessors(courseData.professors);
+  renderGPA(courseData.gpa);
+  renderTimeLoad(courseData.timeConsumed);
+  renderReadingLoad(courseData.readingLoad);
+  renderPracticeLoad(courseData.practiceProblemLoad);
+  renderComments(courseData.comments);
 }
