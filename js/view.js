@@ -28,7 +28,7 @@ function renderRateButtons() {
   return container;
 }
 
-export function renderProfessor(professor) {
+function renderProfessor(professor) {
   const item = document.createElement("div");
   item.classList.add(
     "class-info-item",
@@ -60,4 +60,32 @@ export function renderProfessor(professor) {
   item.appendChild(infoContainer);
 
   return item;
+}
+
+export function renderProfessors(professors) {
+  const container = document.getElementById("professors");
+  container.innerHTML = "";
+  professors.forEach((prof) => {
+    container.appendChild(renderProfessor(prof));
+  });
+}
+
+export function renderGPA(gpa) {
+  const container = document.getElementById("gpa");
+  container.textContent = gpa;
+}
+
+export function renderTimeLoad(load) {
+  const container = document.getElementById("time-load");
+  container.textContent = load;
+}
+
+export function renderReadingLoad(load) {
+  const container = document.getElementById("reading-load");
+  container.textContent = load;
+}
+
+export function renderPracticeLoad(load) {
+  const container = document.getElementById("practice-load");
+  container.textContent = load;
 }
