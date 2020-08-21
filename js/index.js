@@ -24,6 +24,8 @@ document.getElementById("search-course-btn").addEventListener("click", () => {
     if (courseList.includes(courseName)) {
       changeCourse(courseName);
       renderCourse();
+    } else {
+      console.error(`${courseName} not in course lists`);
     }
   }
 });
