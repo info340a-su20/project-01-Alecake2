@@ -85,7 +85,7 @@ function renderProfessor(professor) {
 export function renderProfessors(professors) {
   const container = document.getElementById("professors");
   container.innerHTML = "";
-  professors.forEach((prof) => {
+  Object.values(professors).forEach((prof) => {
     container.appendChild(renderProfessor(prof));
   });
 }
@@ -139,7 +139,7 @@ export function renderComments(comments) {
 }
 
 export function renderCourse() {
-  const courseData = getCourse(getCurCourse());
+  const courseData = getCourse();
   renderTitle(courseData.title);
   renderProfessors(courseData.professors);
   renderGPA(courseData.gpa);

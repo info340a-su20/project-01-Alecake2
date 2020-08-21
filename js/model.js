@@ -1,7 +1,7 @@
 const data = {
   info200: {
-    professors: [
-      {
+    professors: {
+      "John Brown": {
         name: "John Brown",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
@@ -10,7 +10,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-      {
+      "John Brown": {
         name: "Joe Schmo",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
@@ -19,7 +19,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-      {
+      "John Brown": {
         name: "Jane Smith",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
@@ -28,7 +28,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-    ],
+    },
     comments: [
       {
         author: "anonymous A",
@@ -49,12 +49,10 @@ export function getCourseList() {
   return Object.keys(data);
 }
 
-export function getCourse(name) {
-  if (name in data) {
-    const courseData = data[name];
-    courseData.title = name;
-    return courseData;
-  }
+export function getCourse() {
+  const courseData = data[curCourse];
+  courseData.title = curCourse;
+  return courseData;
 }
 
 export function addComment(author, comment) {
