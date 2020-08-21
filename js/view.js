@@ -60,6 +60,7 @@ function renderProfessor(professor) {
   footer.className = "professor-footer d-flex justify-content-between";
   const rating = document.createElement("p");
   rating.className = "professor-rating text-primary mb-0";
+  rating.textContent = professor.rating;
   footer.appendChild(rating);
   footer.appendChild(renderRateButtons());
 

@@ -40,7 +40,7 @@
     </header>
 
     <main class="px-5">
-        <div id="professors" class="class-info container">
+        <div id="professors" class="class-info container mb-3">
             <div class="class-info-item border border-primary rounded mb-3 d-flex">
                 <img class="professor-photo" src="img/instructorone.jpg" alt="john's picture">
                 <div class="w-100 m-3 position-relative">
@@ -123,6 +123,22 @@
                         <div id="practice-load" class="card-body">Practice Problem Load: N/A</div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="comments-container container border rounded p-3 mb-3">
+            <p class="h2">Comments</p>
+            <form class="comment-form">
+                <textarea name="comment" id="comment-textarea" class="w-100"></textarea>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary">Send Comment</button></div>
+            </form>
+            <hr>
+            <div class="comment px-3">
+                <p class="user font-weight-bold">anonymous</p>
+                <p class="comment-body">
+                    This class is great and professors are so friendly!
+                </p>
             </div>
         </div>
     </main>

@@ -30,10 +30,6 @@ footer {
     color: #007bff;
 }
 
-.class-info {
-    margin-bottom: 4rem;
-}
-
 .class-title {
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -73,13 +69,8 @@ footer {
     font-size: 2rem;
 }
 
-.student-comment {
-    display: none;
-}
-
-.accuracy-score:hover + .student-comment{
-    display: block;
-    
+#comment-textarea {
+    height: 120px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -104,3 +95,4 @@ img {
     max-width: 200px;
     max-height: 220px;
 }
+
