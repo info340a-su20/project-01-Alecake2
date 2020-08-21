@@ -19,9 +19,11 @@ document.getElementById("search-course-btn").addEventListener("click", () => {
   const courseList = getCourseList();
   if (dept.length > 0 && num.length > 0) {
     const courseName = `${dept}${num}`;
-    if (courseName in courseList) {
+    console.log(courseName, courseList);
+
+    if (courseList.includes(courseName)) {
       changeCourse(courseName);
-      renderCourse(getCourse(curCourse));
+      renderCourse();
     }
   }
 });
