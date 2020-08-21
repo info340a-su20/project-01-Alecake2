@@ -8,7 +8,7 @@ import {
 } from "./model.js";
 
 export function sendComment(comment) {
-  addComment(course, "You", comment);
+  addComment("You", comment);
   renderComments(getComments());
 }
 

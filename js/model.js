@@ -225,7 +225,7 @@ const data = {
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
         img: "img/instructortwo.jpg",
-        accuracy: 3;
+        accuracy: 3,
         thumbUp: false,
         thumbDown: false,
       },
@@ -376,10 +376,10 @@ const data = {
     readingLoad: 70,
     practiceProblemLoad: "heavy",
   },
+};
 
+let curCourse = Object.keys(data)[0];
 
-
-}
 export function getCourseList() {
   return Object.keys(data);
 }
