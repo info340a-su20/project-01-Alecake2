@@ -1,20 +1,15 @@
-import { getCourse, getCourseList } from "./model.js";
+import { getCourse, getCourseList, changeCourse } from "./model.js";
 import { renderCourse } from "./view.js";
 import { sendComment } from "./controller.js";
 
-const defaultCourse = "info200";
-
-// states
-let curCourse = defaultCourse;
-
-renderCourse(defaultCourse, getCourse(defaultCourse));
+renderCourse();
 
 document.getElementById("send-comments-btn").addEventListener("click", () => {
   const textarea = document.getElementById("comment-textarea");
   const comment = textarea.value;
   if (!!comment && comment.length > 0) {
     textarea.value = "";
-    sendComment(curCourse, comment);
+    sendComment(comment);
   }
 });
 
@@ -25,8 +20,8 @@ document.getElementById("search-course-btn").addEventListener("click", () => {
   if (dept.length > 0 && num.length > 0) {
     const courseName = `${dept}${num}`;
     if (courseName in courseList) {
-      curCourse = courseName;
-      renderCourse(curCourse, getCourse(curCourse));
+      changeCourse(courseName);
+      renderCourse(getCourse(curCourse));
     }
   }
 });

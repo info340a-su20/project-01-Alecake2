@@ -42,18 +42,49 @@ const data = {
   },
 };
 
+const defaultCourse = "info200";
+let curCourse = defaultCourse;
+
 export function getCourseList() {
   return Object.keys(data);
 }
 
 export function getCourse(name) {
-  return data[name];
+  if (name in data) {
+    const courseData = data[name];
+    courseData.title = name;
+    return courseData;
+  }
 }
 
-export function addComment(course, author, comment) {
-  data[course].comments.push({ author, body: comment });
+export function addComment(author, comment) {
+  data[curCourse].comments.push({ author, body: comment });
 }
 
-export function getComments(course) {
-  return data[course].comments;
+export function getComments() {
+  return data[curCourse].comments;
+}
+
+export function setThumbUp(professor) {
+  data[curCourse].professors[professor].thumbUp = true;
+  data[curCourse].professors[professor].thumbDown = false;
+}
+
+export function setThumbDown(professor) {
+  data[curCourse].professors[professor].thumbUp = false;
+  data[curCourse].professors[professor].thumbDown = true;
+}
+
+export function getProfessors() {
+  return data[curCourse].professors;
+}
+
+export function getCurCourse() {
+  return curCourse;
+}
+
+export function changeCourse(newCourse) {
+  if (newCourse in data) {
+    curCourse = newCourse;
+  }
 }

@@ -1,3 +1,6 @@
+import { thumbUp, thumbDown } from "./controller.js";
+import { getCurCourse, getCourse } from "./model.js";
+
 function renderTitle(title) {
   document.getElementById("class-title").textContent = title;
 }
@@ -10,6 +13,9 @@ function renderRateButtons() {
   const btnDown = document.createElement("button");
   btnDown.className = "class-rate-btn btn btn-light p-0";
   btnDown.setAttribute("type", "button");
+  btnDown.addEventListener("click", () => {
+    thumbDown();
+  });
   const iconDown = document.createElement("i");
   iconDown.className = "fas fa-thumbs-down text-dark";
   btnDown.appendChild(iconDown);
@@ -64,7 +70,7 @@ function renderProfessor(professor) {
   rating.className = "professor-rating text-primary mb-0";
   rating.textContent = parseFloat(professor.accuracy).toFixed(1) + "/5.0";
   footer.appendChild(rating);
-  footer.appendChild(renderRateButtons());
+  footer.appendChild(renderRateButtons(professor));
 
   infoContainer.appendChild(name);
   infoContainer.appendChild(desc);
@@ -132,8 +138,9 @@ export function renderComments(comments) {
   });
 }
 
-export function renderCourse(title, courseData) {
-  renderTitle(title);
+export function renderCourse() {
+  const courseData = getCourse(getCurCourse());
+  renderTitle(courseData.title);
   renderProfessors(courseData.professors);
   renderGPA(courseData.gpa);
   renderTimeLoad(courseData.timeConsumed);
