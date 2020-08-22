@@ -1,7 +1,7 @@
 const data = {
   info200: {
-    professors: {
-      "John Brown": {
+    professors: [
+      {
         name: "John Brown",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
@@ -10,7 +10,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-      "John Brown": {
+      {
         name: "Joe Schmo",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
@@ -19,7 +19,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-      "John Brown": {
+      {
         name: "Jane Smith",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
@@ -28,7 +28,7 @@ const data = {
         thumbUp: false,
         thumbDown: false,
       },
-    },
+    ],
     comments: [
       {
         author: "anonymous A",
@@ -74,7 +74,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "If you do a lot of practice tests before exam, it would help a lot",
+        body:
+          "If you do a lot of practice tests before exam, it would help a lot",
       },
     ],
     gpa: 3.9,
@@ -116,7 +117,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "Lectures were well organized and his website has a lot of great resources that I continue to use after finishing this class. Really cares about his students and what they learned.!",
+        body:
+          "Lectures were well organized and his website has a lot of great resources that I continue to use after finishing this class. Really cares about his students and what they learned.!",
       },
     ],
     gpa: 3.5,
@@ -200,7 +202,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "Great and entertaining lectures, concepts were explained thoroughly and for the most part left me feeling prepared for exams 152",
+        body:
+          "Great and entertaining lectures, concepts were explained thoroughly and for the most part left me feeling prepared for exams 152",
       },
     ],
     gpa: 3.7,
@@ -284,7 +287,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "Great lectures and straightforward exams! Show up, listen, and lightly read articles and it is easy to do well.",
+        body:
+          "Great lectures and straightforward exams! Show up, listen, and lightly read articles and it is easy to do well.",
       },
     ],
     gpa: 3.8,
@@ -326,7 +330,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "The class is accelerated, and the professors didn't want to waste time explaining things. Skips way too much. This class only works for people who started coding real early.",
+        body:
+          "The class is accelerated, and the professors didn't want to waste time explaining things. Skips way too much. This class only works for people who started coding real early.",
       },
     ],
     gpa: 3.54,
@@ -368,7 +373,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "Amazing class!!!! if you study lecture slides and do your homework, you should be fine.",
+        body:
+          "Amazing class!!!! if you study lecture slides and do your homework, you should be fine.",
       },
     ],
     gpa: 3.76,
@@ -410,7 +416,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "The physics intro sequence in general is tough, but I think taking the course with Tasmin could help a lot!",
+        body:
+          "The physics intro sequence in general is tough, but I think taking the course with Tasmin could help a lot!",
       },
     ],
     gpa: 3.76,
@@ -494,7 +501,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "One of the best studios taken, handsdown. Creative and thoughtful. Wish we had a real final review since we built the model stand.",
+        body:
+          "One of the best studios taken, handsdown. Creative and thoughtful. Wish we had a real final review since we built the model stand.",
       },
     ],
     gpa: 3.76,
@@ -578,7 +586,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "AWESOME CLASS! I think it did help that I was greatly interested in the class, but that being said I knew nothing about info going in.",
+        body:
+          "AWESOME CLASS! I think it did help that I was greatly interested in the class, but that being said I knew nothing about info going in.",
       },
     ],
     gpa: 3.76,
@@ -620,7 +629,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "Patrik is a nice guy and is really funny, but his class was pretty hard because not a ton of the homework concepts are covered in lecture so I had to teach myself a lot of the course.",
+        body:
+          "Patrik is a nice guy and is really funny, but his class was pretty hard because not a ton of the homework concepts are covered in lecture so I had to teach myself a lot of the course.",
       },
     ],
     gpa: 3.76,
@@ -662,7 +672,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "Dr. Alvarez is such a fun and passionate prof! Even though the subject is hard, she makes it fun. Explains concepts really well.",
+        body:
+          "Dr. Alvarez is such a fun and passionate prof! Even though the subject is hard, she makes it fun. Explains concepts really well.",
       },
     ],
     gpa: 3.76,
@@ -704,7 +715,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "Basically a review of algebra. This class was not super difficult",
+        body:
+          "Basically a review of algebra. This class was not super difficult",
       },
     ],
     gpa: 3.76,
@@ -746,7 +758,8 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "Lectures were interesting and Darnell is a very knowledgeable professor. Get ready to learn! 1 homework assignment per week, 1 midterm, and 1 final.",
+        body:
+          "Lectures were interesting and Darnell is a very knowledgeable professor. Get ready to learn! 1 homework assignment per week, 1 midterm, and 1 final.",
       },
     ],
     gpa: 3.76,
@@ -777,13 +790,15 @@ export function getComments() {
 }
 
 export function setThumbUp(professor) {
-  data[curCourse].professors[professor].thumbUp = true;
-  data[curCourse].professors[professor].thumbDown = false;
+  data[curCourse].professors.find((p) => p.name === professor).thumbUp = true;
+  data[curCourse].professors.find(
+    (p) => p.name === professor
+  ).thumbDown = false;
 }
 
 export function setThumbDown(professor) {
-  data[curCourse].professors[professor].thumbUp = false;
-  data[curCourse].professors[professor].thumbDown = true;
+  data[curCourse].professors.find((p) => p.name === professor).thumbUp = false;
+  data[curCourse].professors.find((p) => p.name === professor).thumbDown = true;
 }
 
 export function getProfessors() {
