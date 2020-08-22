@@ -5,7 +5,7 @@ const data = {
         name: "John Brown",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "../img/one.jpg",
+        img: "img/one.jpg",
         accuracy: 2,
         thumbUp: false,
         thumbDown: false,
@@ -47,16 +47,16 @@ const data = {
         name: "Julia Pevtsova",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/four.jpg",
         accuracy: 3,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Caitlyn Baker",
+        name: "Baker Caitlyn",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/five.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -65,7 +65,7 @@ const data = {
         name: "Blair Whitehouse",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/six.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -74,7 +74,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "If you do a lot of practice tests before exam, it would help a lot",
       },
     ],
     gpa: 3.9,
@@ -89,7 +89,7 @@ const data = {
         name: "Wasim Dennis",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/seven.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -98,7 +98,7 @@ const data = {
         name: "Nikola Dillon",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/eight.jpg",
         accuracy: 3,
         thumbUp: false,
         thumbDown: false,
@@ -107,7 +107,7 @@ const data = {
         name: "Anjali Blundell",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/nine.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -116,7 +116,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "Lectures were well organized and his website has a lot of great resources that I continue to use after finishing this class. Really cares about his students and what they learned.!",
       },
     ],
     gpa: 3.5,
@@ -131,7 +131,7 @@ const data = {
         name: "Zena Rooney",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/ten.jpg",
         accuracy: 5,
         thumbUp: false,
         thumbDown: false,
@@ -140,7 +140,7 @@ const data = {
         name: "Keavy Mcguire",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/eleven.jpg",
         accuracy: 3,
         thumbUp: false,
         thumbDown: false,
@@ -149,7 +149,7 @@ const data = {
         name: "Ella-Rose Hull",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/twelve.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -173,7 +173,7 @@ const data = {
         name: "Mateo Ochoa",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/thirteen.jpg",
         accuracy: 3.7,
         thumbUp: false,
         thumbDown: false,
@@ -182,7 +182,7 @@ const data = {
         name: "Sanna Welch",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/21.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -191,7 +191,7 @@ const data = {
         name: "Malak Davie",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/fifteen.jpg",
         accuracy: 4.8,
         thumbUp: false,
         thumbDown: false,
@@ -200,7 +200,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "Great and entertaining lectures, concepts were explained thoroughly and for the most part left me feeling prepared for exams 152",
       },
     ],
     gpa: 3.7,
@@ -215,7 +215,7 @@ const data = {
         name: "Shay Church",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/sixteen.jpg",
         accuracy: 4.6,
         thumbUp: false,
         thumbDown: false,
@@ -224,7 +224,7 @@ const data = {
         name: "Maison Daniel",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/seventeen.jpg",
         accuracy: 3,
         thumbUp: false,
         thumbDown: false,
@@ -233,7 +233,7 @@ const data = {
         name: "Jardel Compton",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/eighteen.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -254,10 +254,10 @@ const data = {
   econ200: {
     professors: [
       {
-        name: "Lindsay Woodard",
+        name: "Woodard Lindsay",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/ninteen.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -266,7 +266,7 @@ const data = {
         name: "Zi Manning",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/22.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -275,7 +275,7 @@ const data = {
         name: "Dominik Goulding",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/twenty.jpg",
         accuracy: 3.5,
         thumbUp: false,
         thumbDown: false,
@@ -284,7 +284,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "Great lectures and straightforward exams! Show up, listen, and lightly read articles and it is easy to do well.",
       },
     ],
     gpa: 3.8,
@@ -299,7 +299,7 @@ const data = {
         name: "Gavin Begum",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/fourteen.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -308,7 +308,7 @@ const data = {
         name: "Rita Byrne",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/24.jpg",
         accuracy: 3.8,
         thumbUp: false,
         thumbDown: false,
@@ -317,7 +317,7 @@ const data = {
         name: "Jordanne Lowe",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/23.jpg",
         accuracy: 4.7,
         thumbUp: false,
         thumbDown: false,
@@ -326,7 +326,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "The class is accelerated, and the professors didn't want to waste time explaining things. Skips way too much. This class only works for people who started coding real early.",
       },
     ],
     gpa: 3.54,
@@ -341,7 +341,7 @@ const data = {
         name: "Saanvi Browning",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/25.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -350,7 +350,7 @@ const data = {
         name: "Ishika Vargas",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/26.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -359,7 +359,7 @@ const data = {
         name: "Reanna Morin",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/three.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -368,7 +368,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "Amazing class!!!! if you study lecture slides and do your homework, you should be fine.",
       },
     ],
     gpa: 3.76,
@@ -380,28 +380,28 @@ const data = {
   phys121: {
     professors: [
       {
-        name: "Saanvi Browning",
+        name: "Maksim Ayers",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/one.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Ishika Vargas",
+        name: "Zoya Coleman",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/four.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Reanna Morin",
+        name: "Tamsin Aldred",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "three.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -410,7 +410,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "The physics intro sequence in general is tough, but I think taking the course with Tasmin could help a lot!",
       },
     ],
     gpa: 3.76,
@@ -422,28 +422,28 @@ const data = {
   amath152: {
     professors: [
       {
-        name: "Saanvi Browning",
+        name: "Cristian Dupont",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/five.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Ishika Vargas",
+        name: "Arsalan Jackson",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/six.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Reanna Morin",
+        name: "August Werner",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/fourteen.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -452,7 +452,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "The best I have seen e.g. explaining the SVD.",
       },
     ],
     gpa: 3.76,
@@ -464,28 +464,28 @@ const data = {
   arch150: {
     professors: [
       {
-        name: "Saanvi Browning",
+        name: "Anish Daugherty",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/sixteen.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Ishika Vargas",
+        name: "Avleen Beattie",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/twelve.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Reanna Morin",
+        name: "Eshaal Barlow",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/24.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -494,7 +494,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "One of the best studios taken, handsdown. Creative and thoughtful. Wish we had a real final review since we built the model stand.",
       },
     ],
     gpa: 3.76,
@@ -503,31 +503,31 @@ const data = {
     practiceProblemLoad: "heavy",
   },
 
-  com200: {
+  econ201: {
     professors: [
       {
-        name: "Saanvi Browning",
+        name: "Shahzaib Shannon",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/seven.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Ishika Vargas",
+        name: "Dorothy Ferreira",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/26.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Reanna Morin",
+        name: "Mitchel Wilcox",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/ten.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -536,7 +536,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "A good TA is important to get a good grade in this course.",
       },
     ],
     gpa: 3.76,
@@ -548,28 +548,28 @@ const data = {
   info201: {
     professors: [
       {
-        name: "Saanvi Browning",
+        name: "Tasmin Mccallum",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/23.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Ishika Vargas",
+        name: "Kirstin Mcguire",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/26.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Reanna Morin",
+        name: "Louie Miller",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/eleven.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -578,7 +578,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "AWESOME CLASS! I think it did help that I was greatly interested in the class, but that being said I knew nothing about info going in.",
       },
     ],
     gpa: 3.76,
@@ -590,28 +590,28 @@ const data = {
   math126: {
     professors: [
       {
-        name: "Saanvi Browning",
+        name: "Anja Stephenson",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/ninteen.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Ishika Vargas",
+        name: "Milli Bowes",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/27.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Reanna Morin",
+        name: "Patrik Mcclain",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/seven.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -620,7 +620,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "Patrik is a nice guy and is really funny, but his class was pretty hard because not a ton of the homework concepts are covered in lecture so I had to teach myself a lot of the course.",
       },
     ],
     gpa: 3.76,
@@ -632,28 +632,28 @@ const data = {
   math125: {
     professors: [
       {
-        name: "Saanvi Browning",
+        name: "Dominik Jaramillo",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/23.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Ishika Vargas",
+        name: "Mahi Ayala",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/eight.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Reanna Morin",
+        name: "Kirk Alvarez",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/24.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -662,7 +662,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "Dr. Alvarez is such a fun and passionate prof! Even though the subject is hard, she makes it fun. Explains concepts really well.",
       },
     ],
     gpa: 3.76,
@@ -674,28 +674,28 @@ const data = {
   stat220: {
     professors: [
       {
-        name: "Saanvi Browning",
+        name: "Camden Schmidt",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/thirteen.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Ishika Vargas",
+        name: "Melisa Ewing",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/26.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Reanna Morin",
+        name: "Trent Edge",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/five.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -704,7 +704,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "Basically a review of algebra. This class was not super difficult",
       },
     ],
     gpa: 3.76,
@@ -713,31 +713,31 @@ const data = {
     practiceProblemLoad: "heavy",
   },
 
-  stat311: {
+  cse143: {
     professors: [
       {
-        name: "Saanvi Browning",
+        name: "Zhane Bowers",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/22.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Ishika Vargas",
+        name: "Diogo Fleming",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/23.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
       },
       {
-        name: "Reanna Morin",
+        name: "Darnell Smyth",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/eleven.jpg",
         accuracy: 4.3,
         thumbUp: false,
         thumbDown: false,
@@ -746,7 +746,7 @@ const data = {
     comments: [
       {
         author: "anonymous A",
-        body: "This class is great and professors are so friendly!",
+        body: "Lectures were interesting and Darnell is a very knowledgeable professor. Get ready to learn! 1 homework assignment per week, 1 midterm, and 1 final.",
       },
     ],
     gpa: 3.76,
