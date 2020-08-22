@@ -14,23 +14,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/college.png"/>
+    <link rel="icon" type="image/png" href="img/college.png" />
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light d-flex">
-        <div class="searchBox form-inline d-flex flex-nowrap">
-            <a class="navbar-brand" href="index.html"><i class="fa fa-graduation-cap"></i></a>
-            <input type="search" class="form-control mr-2" placeholder="Deparment" aria-label="Search">
-            <input type="search" class="form-control mr-2" placeholder="Course Number" aria-label="Search">
-            <button type="button" class="btn btn-primary"><i class="fas fa-search fa-rotate-90"
+    <nav class="navbar navbar-light bg-light d-flex p-3 align-items-start">
+        <div id="course-search" class="searchBox form-inline d-flex flex-nowrap align-items-start">
+            <a class="navbar-brand ml-2" href="index.html"><i class="fa fa-graduation-cap"></i></a>
+            <div>
+                <input id="input-course" type="search" class="form-control mr-2" placeholder="Course Number"
+                    aria-label="Search">
+                <div id="searchFeedback" class="invalid-feedback">This course does not exist</div>
+            </div>
+            <button id="search-course-btn" type="button" class="btn btn-primary"><i class="fas fa-search fa-rotate-90"
                     aria-label="search"></i></button>
         </div>
-        <div class="d-flex flex-row-reverse form-inline">
-            <div class="share mr-2">
-                <button type="button" class="btn btn-primary"><i class="fas fa-history"></i></button>
-            </div>
-
+        <div class="d-flex flex-row-reverse form-inline h-100 align-items-start">
             <div class="login mr-2">
                 <a href="login.html" class="btn btn-primary"><i class="fas fa-user"></i></a>
             </div>
