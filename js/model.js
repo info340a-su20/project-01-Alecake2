@@ -5,7 +5,7 @@ const data = {
         name: "John Brown",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/one.jpg",
+        img: "../img/one.jpg",
         accuracy: 2,
         thumbUp: false,
         thumbDown: false,
@@ -14,7 +14,7 @@ const data = {
         name: "Joe Schmo",
         desc:
           "My class will involve a lot of group work activities, participation is heavily emphasized. There will be no final tests.",
-        img: "img/instructortwo.jpg",
+        img: "img/two.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
@@ -23,7 +23,7 @@ const data = {
         name: "Jane Smith",
         desc:
           "Tests will be the largest part of your grades, lecture videos are uploaded to Canvas, attendance is optional",
-        img: "img/instructorthree.jpg",
+        img: "img/three.jpg",
         accuracy: 4,
         thumbUp: false,
         thumbDown: false,
