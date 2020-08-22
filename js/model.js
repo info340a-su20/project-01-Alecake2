@@ -5,7 +5,7 @@ const data = {
         name: "John Brown",
         desc:
           "This is a project based course with heavy lectures, attendance is required and prepare to read materials.",
-        img: "img/instructorone.jpg",
+        img: "img/one.jpg",
         accuracy: 2,
         thumbUp: false,
         thumbDown: false,
