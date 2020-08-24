@@ -153,6 +153,9 @@ export function renderComments(comments) {
 
 export function renderCourse() {
   const courseData = getCourse();
+  if (!courseData) {
+    return;
+  }
   renderTitle(courseData.title);
   renderProfessors(courseData.professors);
   renderGPA(courseData.gpa);
