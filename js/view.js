@@ -17,6 +17,7 @@ function renderRateButtons(professor) {
     professor.thumbDown ? "text-white" : "text-dark"
   );
   btnDown.setAttribute("type", "button");
+  btnDown.setAttribute("role", "button");
   btnDown.addEventListener("click", () => {
     thumbDown(professor.name);
   });
@@ -31,6 +32,7 @@ function renderRateButtons(professor) {
     professor.thumbUp ? "text-white" : "text-dark"
   );
   btnUp.setAttribute("type", "button");
+  btnUp.setAttribute("role", "button");
   btnUp.addEventListener("click", () => {
     thumbUp(professor.name);
   });
