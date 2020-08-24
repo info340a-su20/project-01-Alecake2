@@ -3,7 +3,7 @@ import { renderCourse } from "./view.js";
 let curCourse = null;
 let data = null;
 
-fetch("../data.json")
+fetch("https://info340a-su20.github.io/project-01-Alecake2/data.json")
   .then((res) => res.json())
   .then((resJson) => {
     data = resJson;
