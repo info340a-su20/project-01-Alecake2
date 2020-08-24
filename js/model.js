@@ -1,4 +1,4 @@
-import { renderCourse } from "./view";
+import { renderCourse } from "./view.js";
 
 let curCourse = null;
 let data = null;
